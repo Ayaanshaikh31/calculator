@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scientific Calculator</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Scientific Calculator</h1>
+        <div class="calculator">
+            <input type="text" class="display" id="display" readonly>
+            <div class="buttons">
+                <button onclick="clearDisplay()">C</button>
+                <button onclick="deleteLast()">DEL</button>
+                <button onclick="appendOperator('/')">/</button>
+                <button onclick="appendOperator('*')">*</button>
+                <button onclick="appendOperator('(')">(</button>
+                <button onclick="appendOperator(')')">)</button>
+
+                <button onclick="appendNumber('7')">7</button>
+                <button onclick="appendNumber('8')">8</button>
+                <button onclick="appendNumber('9')">9</button>
+                <button onclick="appendOperator('-')">-</button>
+                <button onclick="appendFunction('Math.sqrt')">√</button>
+                <button onclick="appendFunction('Math.sin')">sin</button>
+
+                <button onclick="appendNumber('4')">4</button>
+                <button onclick="appendNumber('5')">5</button>
+                <button onclick="appendNumber('6')">6</button>
+                <button onclick="appendOperator('+')">+</button>
+                <button onclick="appendFunction('Math.cos')">cos</button>
+                <button onclick="appendFunction('Math.tan')">tan</button>
+
+                <button onclick="appendNumber('1')">1</button>
+                <button onclick="appendNumber('2')">2</button>
+                <button onclick="appendNumber('3')">3</button>
+                <button onclick="appendDot()">.</button>
+                <button onclick="appendFunction('Math.log')">log</button>
+                <button onclick="appendFunction('Math.exp')">exp</button>
+
+                <button onclick="appendNumber('0')">0</button>
+                <button onclick="appendOperator('**2')">x²</button>
+                <button onclick="appendOperator('**3')">x³</button>
+                <button onclick="appendOperator('%')">%</button>
+                <button onclick="appendFunction('1/')">1/x</button>
+                <button onclick="calculate()">=</button>
+
+                <button onclick="appendFunction('Math.pow', 2)">x^y</button>
+                <button onclick="appendFunction('Math.abs')">|x|</button>
+                <button onclick="appendConstant('Math.PI')">π</button>
+                <button onclick="appendConstant('Math.E')">e</button>
+                <button onclick="toggleAngleMode()">Deg/Rad</button>
+                <button onclick="appendFunction('Math.log10')">log₁₀</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
